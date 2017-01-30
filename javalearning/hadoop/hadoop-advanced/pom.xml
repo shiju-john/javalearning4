@@ -2,15 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.javalearning4</groupId>
-    <artifactId>javalearning</artifactId>
+    <artifactId>hadoop</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>hadoop</artifactId>
-  <packaging>pom</packaging>
-  
-  <modules>
-  	<module>hadoop-sample</module>
-  	<module>hadoop-advanced</module>
- 
-  </modules>
+  <artifactId>hadoop-advanced</artifactId>
 </project>
