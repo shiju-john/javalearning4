@@ -13,7 +13,7 @@ The HDFS High Availability feature addresses the above problems by providing the
 
 ## Configurations Required for high availability
 
-# Reference
+# References
 Reference tutorials
 https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm
 https://hadoop.apache.org/docs/r2.4.1/hadoop-project-dist/hadoop-hdfs/HDFSHighAvailabilityWithQJM.html
