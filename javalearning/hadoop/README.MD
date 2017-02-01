@@ -8,11 +8,11 @@ Apache Hadoop is an open-source software framework for storage and large-scale p
 
 We can operate Hadoop cluster in anhy of the following mode:
 
-Local/Standalone Mode : After downloading Hadoop in your system, by default, it is configured in a standalone mode and can be run as a single java process.
+***Local/Standalone Mode :*** After downloading Hadoop in your system, by default, it is configured in a standalone mode and can be run as a single java process.
 
-Pseudo Distributed Mode : It is a distributed simulation on single machine. Each Hadoop daemon such as hdfs, yarn, MapReduce etc., will run as a separate java process. This mode is useful for development.
+***Pseudo Distributed Mode :*** It is a distributed simulation on single machine. Each Hadoop daemon such as hdfs, yarn, MapReduce etc., will run as a separate java process. This mode is useful for development.
 
-Fully Distributed Mode : This mode is fully distributed with minimum two or more machines as a cluster. We will come across this mode in detail in the coming chapters.
+***Fully Distributed Mode :*** This mode is fully distributed with minimum two or more machines as a cluster. We will come across this mode in detail in the coming chapters.
 
 
 # HDFS High Availability 
