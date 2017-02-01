@@ -30,6 +30,6 @@ The HDFS High Availability feature addresses the above problems by providing the
 # References
 Reference tutorials
 
-https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm
+https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm \n
 https://hadoop.apache.org/docs/r2.4.1/hadoop-project-dist/hadoop-hdfs/HDFSHighAvailabilityWithQJM.html
 http://ercoppa.github.io/HadoopInternals/HadoopArchitectureOverview.html
