@@ -8,6 +8,8 @@ Pseudo Distributed Mode : It is a distributed simulation on single machine. Each
 
 Fully Distributed Mode : This mode is fully distributed with minimum two or more machines as a cluster. We will come across this mode in detail in the coming chapters.
 
+![Alt text](/src/main/resource/hadoop-architecture-oveview.png?raw=true "hadoop architecture oveview")
+
 ## Hadoop Configurations
 
 # HDFS High Availability 
