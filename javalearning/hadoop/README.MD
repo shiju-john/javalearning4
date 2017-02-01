@@ -6,7 +6,7 @@ Apache Hadoop is an open-source software framework for storage and large-scale p
 
 ## Hadoop Configurations
 
-We can operate Hadoop cluster in anhy of the following mode:
+We can operate Hadoop cluster in any of the following mode:
 
 ***Local/Standalone Mode :*** After downloading Hadoop in your system, by default, it is configured in a standalone mode and can be run as a single java process.
 
