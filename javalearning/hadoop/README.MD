@@ -1,5 +1,11 @@
 # Introduction
 
+Apache Hadoop is an open-source software framework for storage and large-scale processing of data-sets on clusters of commodity hardware. There are mainly five building blocks inside this runtime envinroment (from bottom to top):
+
+![Alt text](src/main/resources/images/hadoop-architecture-oveview.png?raw=true "hadoop architecture oveview")
+
+## Hadoop Configurations
+
 We can operate Hadoop cluster in anhy of the following mode:
 
 Local/Standalone Mode : After downloading Hadoop in your system, by default, it is configured in a standalone mode and can be run as a single java process.
@@ -8,11 +14,6 @@ Pseudo Distributed Mode : It is a distributed simulation on single machine. Each
 
 Fully Distributed Mode : This mode is fully distributed with minimum two or more machines as a cluster. We will come across this mode in detail in the coming chapters.
 
-
-
-![Alt text](src/main/resources/images/hadoop-architecture-oveview.png?raw=true "hadoop architecture oveview")
-
-## Hadoop Configurations
 
 # HDFS High Availability 
 Prior to Hadoop 2.0.0, the NameNode was a single point of failure (SPOF) in an HDFS cluster. Each cluster had a single NameNode,and if that machine or process became unavailable, the cluster as a whole would be unavailable until the NameNode was either restarted or brought up on a separate machine.
