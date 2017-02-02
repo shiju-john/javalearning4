@@ -62,13 +62,16 @@ set HADOOP_HOME & path in enviornment variable for windows
        <value>org.apache.hadoop.mapred.ShuffleHandler</value>
    </property>
 ```
-    
-**set JAVA_HOME in hadoop-env.cmd**
 
+***set the following env variables*** 
+
+```
+set JAVA_HOME in hadoop-env.cmd
 set HADOOP_PREFIX=F:/tools/tools/hadoop-2.7.3
 set HADOOP_CONF_DIR=F:/tools/tools/hadoop-2.7.3/etc/hdoop
 set YARN_CONF_DIR=F:/tools/tools/hadoop-2.7.3/etc/hdoop
 set PATH=%PATH%;F:/tools/tools/hadoop-2.7.3/bin
+```
 
 ***Pseudo Distributed Mode :*** It is a distributed simulation on single machine. Each Hadoop daemon such as hdfs, yarn, MapReduce etc., will run as a separate java process. This mode is useful for development.
 
