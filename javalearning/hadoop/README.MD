@@ -38,19 +38,21 @@ set HADOOP_HOME & path in enviornment variable for windows
        <name>dfs.datanode.data.dir</name>
      <value>F:/tools/tools/hadoop-2.7.3/node/dataNode</value>
    </property>
-    ```
-    
-    
+```   
 ***mapred-site.xml*** 
+ 
  ```
+ 
  <property>
 	<name>mapreduce.framework.name</name>
 	<value>yarn</value>
 </property>
- ```
- 
-***yarn-site.xml*** <br/>
-   ```
+
+```
+
+***yarn-site.xml*** 
+  
+```
   <property>
        <name>yarn.nodemanager.aux-services</name>
        <value>mapreduce_shuffle</value>
@@ -59,7 +61,7 @@ set HADOOP_HOME & path in enviornment variable for windows
        <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
        <value>org.apache.hadoop.mapred.ShuffleHandler</value>
    </property>
-    ```
+```
     
 **set JAVA_HOME in hadoop-env.cmd**
 
