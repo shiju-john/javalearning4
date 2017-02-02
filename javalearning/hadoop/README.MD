@@ -14,14 +14,14 @@ We can operate Hadoop cluster in any of the following mode:
 set HADOOP_HOME & path in enviornment variable for windows
 
 ***core-site.xml*** <br/>
-  <property>
-    <name>hadoop.tmp.dir</name>
-     <value>F:\tools\tools\hadoop-2.7.3\tmp</value>
-  </property>
-  <property>
-    <name>fs.defaultFS</name>
-    <value>hdfs://localhost:9000</value>
-  </property>
+    <property> 
+        <name>hadoop.tmp.dir</name>  
+     <value>F:\tools\tools\hadoop-2.7.3\tmp</value> <br/>
+  </property><br/>
+  <property><br/>
+    <name>fs.defaultFS</name><br/>
+    <value>hdfs://localhost:9000</value><br/>
+  </property><br/>
 ***hdfs-site.xml*** <br/>
   <property>
 	    <name>dfs.replication</name>
