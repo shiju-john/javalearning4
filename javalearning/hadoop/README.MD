@@ -13,10 +13,10 @@ We can operate Hadoop cluster in any of the following mode:
 ### Configuration for Windows
 set HADOOP_HOME path in enviornment variable for windows
 
-***core-site.xml***
-***hdfs-site.xml***
-***core-site.xml***
-***yarn-site.xml***
+***core-site.xml*** <br/>
+***hdfs-site.xml*** <br/>
+***core-site.xml*** <br/>
+***yarn-site.xml*** <br/>
 
 **set JAVA_HOME in hadoop-env.cmd**
 
