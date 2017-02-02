@@ -1,6 +1,6 @@
 # Introduction
 
-Apache Hadoop is an open-source software framework for storage and large-scale processing of data-sets on clusters of commodity hardware. There are mainly five building blocks inside this runtime envinroment (from bottom to top):
+Apache Hadoop is an open-source software framework for storage and large-scale processing of data-sets on clusters of commodity hardware.The basic principle of working behind  Apache Hadoop is to break up unstructured data and distribute it into many parts for concurrent data analysis. There are mainly five building blocks inside this runtime envinroment (from bottom to top):
 
 ![Alt text](src/main/resources/images/hadoop-architecture-oveview.png?raw=true "hadoop architecture oveview")
 
