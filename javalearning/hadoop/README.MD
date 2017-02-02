@@ -39,6 +39,8 @@ set HADOOP_HOME & path in enviornment variable for windows
      <value>F:/tools/tools/hadoop-2.7.3/node/dataNode</value>
    </property>
     ```
+    
+    
 ***mapred-site.xml*** 
  ```
  <property>
@@ -46,6 +48,7 @@ set HADOOP_HOME & path in enviornment variable for windows
 	<value>yarn</value>
 </property>
  ```
+ 
 ***yarn-site.xml*** <br/>
    ```
   <property>
@@ -57,6 +60,7 @@ set HADOOP_HOME & path in enviornment variable for windows
        <value>org.apache.hadoop.mapred.ShuffleHandler</value>
    </property>
     ```
+    
 **set JAVA_HOME in hadoop-env.cmd**
 
 set HADOOP_PREFIX=F:/tools/tools/hadoop-2.7.3
