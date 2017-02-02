@@ -10,6 +10,16 @@ We can operate Hadoop cluster in any of the following mode:
 
 ***Local/Standalone Mode :*** After downloading Hadoop in your system, by default, it is configured in a standalone mode and can be run as a single java process.
 
+### Configuration for Windows
+set HADOOP_HOME path in enviornment variable for windows
+
+***core-site.xml***
+***hdfs-site.xml***
+***core-site.xml***
+***yarn-site.xml***
+
+**set JAVA_HOME in hadoop-env.cmd**
+
 ***Pseudo Distributed Mode :*** It is a distributed simulation on single machine. Each Hadoop daemon such as hdfs, yarn, MapReduce etc., will run as a separate java process. This mode is useful for development.
 
 ***Fully Distributed Mode :*** This mode is fully distributed with minimum two or more machines as a cluster. We will come across this mode in detail in the coming chapters.
