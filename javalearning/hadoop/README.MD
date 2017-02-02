@@ -11,14 +11,50 @@ We can operate Hadoop cluster in any of the following mode:
 ***Local/Standalone Mode :*** After downloading Hadoop in your system, by default, it is configured in a standalone mode and can be run as a single java process.
 
 ### Configuration for Windows
-set HADOOP_HOME path in enviornment variable for windows
+set HADOOP_HOME & path in enviornment variable for windows
 
 ***core-site.xml*** <br/>
+  <property>
+    <name>hadoop.tmp.dir</name>
+     <value>F:\tools\tools\hadoop-2.7.3\tmp</value>
+  </property>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://localhost:9000</value>
+  </property>
 ***hdfs-site.xml*** <br/>
-***core-site.xml*** <br/>
+  <property>
+	    <name>dfs.replication</name>
+	    <value>1</value>
+  </property>  
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>F:/tools/tools/hadoop-2.7.3/node/nameNode</value>
+   </property>
+   <property>
+       <name>dfs.datanode.data.dir</name>
+     <value>F:/tools/tools/hadoop-2.7.3/node/dataNode</value>
+   </property>
+***mapred-site.xml*** <br/>
+ <property>
+		<name>mapreduce.framework.name</name>
+		<value>yarn</value>
+	</property>
 ***yarn-site.xml*** <br/>
-
+  <property>
+       <name>yarn.nodemanager.aux-services</name>
+       <value>mapreduce_shuffle</value>
+   </property>
+   <property>
+       <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
+       <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+   </property>
 **set JAVA_HOME in hadoop-env.cmd**
+
+set HADOOP_PREFIX=F:/tools/tools/hadoop-2.7.3
+set HADOOP_CONF_DIR=F:/tools/tools/hadoop-2.7.3/etc/hdoop
+set YARN_CONF_DIR=F:/tools/tools/hadoop-2.7.3/etc/hdoop
+set PATH=%PATH%;F:/tools/tools/hadoop-2.7.3/bin
 
 ***Pseudo Distributed Mode :*** It is a distributed simulation on single machine. Each Hadoop daemon such as hdfs, yarn, MapReduce etc., will run as a separate java process. This mode is useful for development.
 
