@@ -15,7 +15,7 @@ set HADOOP_HOME & path in enviornment variable for windows
 
 ***core-site.xml*** <br/>
   ```
-     <property> 
+  <property> 
      <name>hadoop.tmp.dir</name>  
      <value>F:\tools\tools\hadoop-2.7.3\tmp</value> 
   </property>
@@ -24,25 +24,30 @@ set HADOOP_HOME & path in enviornment variable for windows
     <value>hdfs://localhost:9000</value>
   </property>
   ```
-***hdfs-site.xml*** <br/>
+***hdfs-site.xml*** 
+ ```
   <property>
-	    <name>dfs.replication</name>
-	    <value>1</value>
+	<name>dfs.replication</name>
+	<value>1</value>
   </property>  
   <property>
-    <name>dfs.namenode.name.dir</name>
-    <value>F:/tools/tools/hadoop-2.7.3/node/nameNode</value>
+    	<name>dfs.namenode.name.dir</name>
+    	<value>F:/tools/tools/hadoop-2.7.3/node/nameNode</value>
    </property>
    <property>
        <name>dfs.datanode.data.dir</name>
      <value>F:/tools/tools/hadoop-2.7.3/node/dataNode</value>
    </property>
-***mapred-site.xml*** <br/>
+    ```
+***mapred-site.xml*** 
+ ```
  <property>
-		<name>mapreduce.framework.name</name>
-		<value>yarn</value>
-	</property>
+	<name>mapreduce.framework.name</name>
+	<value>yarn</value>
+</property>
+ ```
 ***yarn-site.xml*** <br/>
+   ```
   <property>
        <name>yarn.nodemanager.aux-services</name>
        <value>mapreduce_shuffle</value>
@@ -51,6 +56,7 @@ set HADOOP_HOME & path in enviornment variable for windows
        <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
        <value>org.apache.hadoop.mapred.ShuffleHandler</value>
    </property>
+    ```
 **set JAVA_HOME in hadoop-env.cmd**
 
 set HADOOP_PREFIX=F:/tools/tools/hadoop-2.7.3
