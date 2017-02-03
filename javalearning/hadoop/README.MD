@@ -32,11 +32,11 @@ set HADOOP_HOME & path in enviornment variable for windows
   </property>  
   <property>
     	<name>dfs.namenode.name.dir</name>
-    	<value>F:/tools/tools/hadoop-2.7.3/node/nameNode</value>
+    	<value>hadoop/data/nameNode</value>
    </property>
    <property>
        <name>dfs.datanode.data.dir</name>
-     <value>F:/tools/tools/hadoop-2.7.3/node/dataNode</value>
+     <value>hadoop/data/dataNode</value>
    </property>
 ```   
 ***mapred-site.xml*** 
