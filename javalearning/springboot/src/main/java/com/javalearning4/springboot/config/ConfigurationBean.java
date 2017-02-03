@@ -1,4 +1,4 @@
-package com.javalearing4.springboot.config;
+package com.javalearning4.springboot.config;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
