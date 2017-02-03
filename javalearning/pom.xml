@@ -8,6 +8,7 @@
 
   <module>hadoop</module>
   <module>kafka</module>
+  <module>springboot</module>
   </modules>
     
    <properties>
