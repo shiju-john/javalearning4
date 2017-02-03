@@ -1,2 +1,2 @@
 # KAFKA
-This project showss the examples KAFKA producer and consumer, Which is integrate with a spring boot application 
+This project shows the examples of KAFKA producer and consumer, Which is integrate with a spring boot application 
