@@ -1,0 +1,8 @@
+server:
+  port: 9001
+kafka:
+  topicName: test_topic_shiju
+  serverurl: localhost:9092
+  consumer:
+    groupId: testGroup
+    messageImpl: com.javalearning4.kafka.message.MessageImpl
