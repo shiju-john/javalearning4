@@ -15,6 +15,7 @@ The messages are organized by topics on which Producers post messages and from w
 *For create a topic with the name test_topic_kafka_sample*
 
 `bin/kafka-topics.cmd --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test_topic_kafka_sample`
-*For List the created topics *
+
+*For List the created topics*
 
 `bin/kafka-topics.cmd --list --zookeeper localhost:2181 `
