@@ -1,7 +1,7 @@
 server:
   port: 9001
 kafka:
-  topicName: test_topic_shiju
+  topicName: test_topic_kafka_sample
   serverurl: localhost:9092
   consumer:
     groupId: testGroup

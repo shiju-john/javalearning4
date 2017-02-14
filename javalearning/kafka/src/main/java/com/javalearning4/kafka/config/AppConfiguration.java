@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import com.javalearning4.kafka.consumer.Consumer;
 import com.javalearning4.kafka.consumer.ConsumerImpl;
 import com.javalearning4.kafka.message.Message;
+import com.javalearning4.kafka.message.MessageProcessor;
 import com.javalearning4.kafka.producer.Producer;
 import com.javalearning4.kafka.producer.ProducerImpl;
 
@@ -32,6 +33,11 @@ public class AppConfiguration {
 	public Producer<Message<String>> producer(){
 		Producer<Message<String>> producer = new ProducerImpl();
 		return producer;
+	}
+	
+	@Bean
+	public MessageProcessor<Message<String>> processor(){		 
+		return  new MessageProcessor<Message<String>>();
 	}
 	
 	public AppConfiguration() {

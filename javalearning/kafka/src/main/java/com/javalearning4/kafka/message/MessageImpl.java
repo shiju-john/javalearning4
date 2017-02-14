@@ -26,7 +26,6 @@ public class MessageImpl implements Message<String>{
 	public Message<String> convertToMessageObject(String jsonString) {
 		Gson gson = new Gson();
 		return gson.fromJson(jsonString, MessageImpl.class);
-		//return new MessageImpl();
 	}
 
 	/**

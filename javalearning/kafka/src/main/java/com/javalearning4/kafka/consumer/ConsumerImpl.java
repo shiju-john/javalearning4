@@ -5,6 +5,8 @@ import java.util.Properties;
 import javax.annotation.PostConstruct;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
@@ -32,8 +34,10 @@ public class ConsumerImpl extends Consumer<Message<String>>{
 	@Value("${kafka.consumer.messageImpl}")
 	String messageClass;
 	
-	public Message<String> consumes(Message<String> message) {
-		return null;
+	public void consumes(CallBack callBack) {
+		this.setCallBack(callBack);
+		Thread thread = new Thread(this);
+		thread.start();
 	}
 
 	@Override
