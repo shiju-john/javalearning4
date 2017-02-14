@@ -33,9 +33,8 @@ public class ProducerImpl implements Producer<Message<String>>{
 	private Map<String,String> producerProperties ;
 	
 	private org.apache.kafka.clients.producer.Producer<String, Message<String>> messageProducer;
-	
-	
-	
+		
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@PostConstruct
 	public void initProperties(){
 		producerProperties = new HashMap<String, String>();
@@ -44,9 +43,7 @@ public class ProducerImpl implements Producer<Message<String>>{
 		producerProperties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,MessageSerializer.class.getName());
 		messageProducer = new KafkaProducer(producerProperties);
 	}
-	
-	
-	
+		
 	public void send(Message<String> message) { 		
 		ProducerRecord<String, Message<String>> producerRecord =
 				new ProducerRecord<String, Message<String>>(topicName,message);
@@ -57,9 +54,5 @@ public class ProducerImpl implements Producer<Message<String>>{
 	public void destroy(){		
 		messageProducer.close();
 	}
-	
-	
-
-
 
 }
