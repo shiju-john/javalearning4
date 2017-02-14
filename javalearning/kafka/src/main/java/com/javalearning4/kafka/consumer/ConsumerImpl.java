@@ -5,14 +5,16 @@ import java.util.Properties;
 import javax.annotation.PostConstruct;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
-import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 import com.javalearning4.kafka.message.Message;
 
-
+/**
+ * 
+ * @author shiju.john
+ *
+ */
 
 @Configuration
 public class ConsumerImpl extends Consumer<Message<String>>{
@@ -49,19 +51,8 @@ public class ConsumerImpl extends Consumer<Message<String>>{
          configProperties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, MessageDeserializer.class.getName());
          configProperties.put(ConsumerConfig.GROUP_ID_CONFIG, groupId);
          configProperties.put(ConsumerConfig.CLIENT_ID_CONFIG, "simple");
-         
-		try {
-			super.postConstract(topicName, configProperties,(Message<String>)Class.forName(messageClass).newInstance());
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+         super.postConstract(topicName, configProperties);
+		
 	}
 
 }

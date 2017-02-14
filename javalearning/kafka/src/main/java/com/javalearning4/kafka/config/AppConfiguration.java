@@ -13,7 +13,11 @@ import com.javalearning4.kafka.message.Message;
 import com.javalearning4.kafka.message.MessageProcessor;
 import com.javalearning4.kafka.producer.Producer;
 import com.javalearning4.kafka.producer.ProducerImpl;
-
+/**
+ * 
+ * @author shiju.john
+ *
+ */
 @Configuration
 @EnableConfigurationProperties
 public class AppConfiguration {
