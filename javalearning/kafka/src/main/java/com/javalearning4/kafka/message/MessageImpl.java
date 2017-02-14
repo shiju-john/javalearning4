@@ -1,7 +1,11 @@
 package com.javalearning4.kafka.message;
 
 import com.google.gson.Gson;
-
+/**
+ * 
+ * @author shiju.john
+ *
+ */
 public class MessageImpl implements Message<String>{
 
 	/**
