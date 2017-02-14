@@ -19,3 +19,6 @@ The messages are organized by topics on which Producers post messages and from w
 *For List the created topics*
 
 `bin/kafka-topics.cmd --list --zookeeper localhost:2181 `
+
+## Kafka architecture
+![Alt text](src/test/resources/images/kafka_Arch.png?raw=true "Kafka architecture oveview")
