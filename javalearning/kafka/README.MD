@@ -21,4 +21,4 @@ The messages are organized by topics on which Producers post messages and from w
 `bin/kafka-topics.cmd --list --zookeeper localhost:2181 `
 
 ## Kafka architecture
-![Alt text](src/test/resources/kafka arch.png?raw=true "Kafka architecture oveview")
+![Alt text](src/test/resources/kafka Arch.png?raw=true "Kafka architecture oveview")
