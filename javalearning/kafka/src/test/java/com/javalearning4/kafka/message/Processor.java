@@ -4,9 +4,7 @@ import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-
 import com.javalearning4.kafka.producer.Producer;
-
 
 
 @Configuration
