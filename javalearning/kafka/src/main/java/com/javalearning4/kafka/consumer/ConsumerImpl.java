@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 import com.javalearning4.kafka.message.Message;
+import com.javalearning4.kafka.message.MessageDeserializer;
 
 /**
  * 

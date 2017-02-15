@@ -4,6 +4,7 @@ package com.javalearning4.kafka.config;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 import com.javalearning4.kafka.consumer.Consumer;
 import com.javalearning4.kafka.consumer.ConsumerImpl;
@@ -20,7 +21,7 @@ import com.javalearning4.kafka.producer.ProducerImpl;
 @EnableConfigurationProperties
 public class AppConfiguration {
 
-	
+
 	@Bean
 	public Consumer<Message<String>> consumer (){
 		Consumer<Message<String>> producer = new ConsumerImpl();

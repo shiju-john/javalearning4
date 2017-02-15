@@ -26,7 +26,7 @@ public class MessageProcessor<T> {
 			message = new MessageImpl();
 			message.setData(""+i);
 			message.setMessageKey(""+i);
-			producer.send(message);
+			//producer.send(message);
 		}
 		
 		

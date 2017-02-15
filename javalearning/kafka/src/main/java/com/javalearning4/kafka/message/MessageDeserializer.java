@@ -1,12 +1,10 @@
-package com.javalearning4.kafka.consumer;
+package com.javalearning4.kafka.message;
 
 import java.util.Map;
 
 import org.apache.kafka.common.serialization.Deserializer;
 
 import com.google.gson.Gson;
-import com.javalearning4.kafka.message.Message;
-import com.javalearning4.kafka.message.MessageImpl;
 
 /**
  * 

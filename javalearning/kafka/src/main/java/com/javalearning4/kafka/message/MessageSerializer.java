@@ -1,10 +1,8 @@
-package com.javalearning4.kafka.producer;
+package com.javalearning4.kafka.message;
 
 import java.util.Map;
 
 import org.apache.kafka.common.serialization.Serializer;
-
-import com.javalearning4.kafka.message.Message;
 
 
 /**

@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 import com.javalearning4.kafka.message.Message;
+import com.javalearning4.kafka.message.MessageSerializer;
 /**
  * 
  * @author shiju.john
