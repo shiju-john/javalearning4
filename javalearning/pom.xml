@@ -4,11 +4,12 @@
   <artifactId>javalearning</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  
   <modules>
-
-  <module>hadoop</module>
-  <module>kafka</module>
-  <module>springboot</module>
+	<module>hadoop</module>
+  	<module>kafka</module>
+  	<module>springboot</module>
+  	<module>mongoDB</module>
   </modules>
     
    <properties>

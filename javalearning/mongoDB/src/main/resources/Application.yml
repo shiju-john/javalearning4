@@ -1,0 +1,6 @@
+server:
+  port: 9001
+mongodb:
+  server: localhost
+  port: 27017
+  dbs: testdb
