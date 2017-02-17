@@ -7,11 +7,11 @@
 `mongodb\bin>mongo.exe`
 
 ###Create Configuration File mongo.config
-`##store data here
+`store data here
 dbpath=D:\mongodb\data
 
-##all output go here
+all output go here
 logpath=D:\mongodb\log\mongo.log
 
-##log read and write operations
+log read and write operations
 diaglog=3'
